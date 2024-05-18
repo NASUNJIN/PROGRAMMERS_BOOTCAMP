@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
-app.listen(3000)
+const dotenv = require('dotenv')
+dotenv.config()
+app.listen(process.env.PORT)
 
 const fruits = [
     { id : 1, name : 'apple' },
